@@ -91,7 +91,7 @@ DO NOT include any explanation or extra text. Return ONLY the JSON.
 
 export async function extractDrugFromFlask(text) {
   try {
-    const response = await fetch('http://localhost:5000/extract_drug', {
+    const response = await fetch('https://final-year-project-bygm.onrender.com/extract_drug', {
       method: 'POST', // 🔴 This must be POST, not GET
       headers: {
         'Content-Type': 'application/json',
